@@ -44,3 +44,5 @@ export const getTotalCartPrice = (store) =>
 
 export const getTotalCartQuantity = (store) =>
   store.cart.cart.reduce((acc, pizza) => acc + pizza.quantity, 0);
+
+export const getCart = (store) => store.cart.cart;
